@@ -3,12 +3,9 @@ package com.msb.mall.order.controller;
 import java.util.Arrays;
 import java.util.Map;
 
+import com.msb.mall.order.fegin.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.msb.mall.order.entity.OrderEntity;
 import com.msb.mall.order.service.OrderService;
@@ -27,8 +24,21 @@ import com.msb.mall.common.utils.R;
 @RestController
 @RequestMapping("order/order")
 public class OrderController {
+
     @Autowired
     private OrderService orderService;
+
+    @Autowired
+    private ProductService productService;
+
+    /**
+     * 查询所有
+     */
+    @GetMapping("/products")
+    //@RequiresPermissions("order:order:list")
+    public R queryProduct(){
+        return R.ok().put("products", productService.queryAllBrand());
+    }
 
     /**
      * 列表
