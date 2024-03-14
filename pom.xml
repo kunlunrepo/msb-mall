@@ -15,7 +15,7 @@
     <artifactId>msb-mall</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>msb-mall</name>
+    <name>商城系统</name>
     <description>商城系统</description>
 
     <modules>
