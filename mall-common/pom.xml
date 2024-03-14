@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>msb-common</artifactId>
+    <artifactId>mall-common</artifactId>
     <name>公共模块</name>
     <description>公共模块</description>
 
