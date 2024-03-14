@@ -1,0 +1,21 @@
+# 端口
+server:
+  port: 8040
+
+spring:
+  # 项目名称
+  application:
+    name: mall-product
+  # 数据源配置
+  datasource:
+    url: jdbc:mysql://192.168.10.50:3306/mall_product?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  # 注册中心
+  cloud:
+    nacos:
+      username: nacos
+      password: nacos
+      discovery:
+        server-addr: 192.168.10.50:8848
