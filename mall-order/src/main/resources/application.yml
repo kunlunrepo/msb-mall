@@ -19,3 +19,9 @@ spring:
       password: nacos
       discovery:
         server-addr: 192.168.10.50:8848
+
+
+# nacos配置 可以先配置也可以不配置
+#user:
+#  userName: zhangsan
+#  age: 18

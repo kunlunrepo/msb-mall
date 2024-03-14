@@ -5,6 +5,8 @@ import java.util.Map;
 
 import com.msb.mall.order.fegin.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
 import com.msb.mall.order.entity.OrderEntity;
@@ -21,6 +23,7 @@ import com.msb.mall.common.utils.R;
  * @email 
  * @date 2024-03-14 11:18:38
  */
+@RefreshScope
 @RestController
 @RequestMapping("order/order")
 public class OrderController {
@@ -30,6 +33,20 @@ public class OrderController {
 
     @Autowired
     private ProductService productService;
+
+    @Value("${user.userName}")
+    private String userName;
+
+    @Value("${user.age}")
+    private Integer age;
+
+    /**
+     * 查询用户信息
+     */
+    @GetMapping("/users")
+    public R queryUser(){
+        return R.ok().put("userName", userName).put("age", age);
+    }
 
     /**
      * 查询所有
