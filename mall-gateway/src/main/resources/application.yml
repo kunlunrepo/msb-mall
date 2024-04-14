@@ -16,14 +16,14 @@ spring:
     # 路由配置
     gateway:
       routes:
-        - id: route1
-          uri: http://www.baidu.com
+        # 商品服务
+        - id: product_route
+          uri: lb://mall-product
           predicates:
-            - Query=url,baidu
-        - id: route2
-          uri: http://www.jd.com
-          predicates:
-            - Query=url,jd
+            - Path=/app/product/**
+          filters:
+            - RewritePath=/app/(?<segment>/?.*), /$\{segment}
+        # 开发平台
         - id: app-route
           uri: lb://renren-fast
           predicates:
