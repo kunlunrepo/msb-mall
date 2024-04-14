@@ -4,9 +4,7 @@
  * https://www.renren.io
  *
  * 版权所有，侵权必究！
- */
-
-package io.renren.datasource.properties;
+ */package io.renren.datasource.properties;
 
 /**
  * 多数据源属性

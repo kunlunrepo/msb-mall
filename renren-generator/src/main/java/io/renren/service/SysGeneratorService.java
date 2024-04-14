@@ -4,9 +4,7 @@
  * https://www.renren.io
  * <p>
  * 版权所有，侵权必究！
- */
-
-package io.renren.service;
+ */package io.renren.service;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;

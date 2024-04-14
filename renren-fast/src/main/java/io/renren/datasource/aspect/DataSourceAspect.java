@@ -4,9 +4,7 @@
  * https://www.renren.io
  *
  * 版权所有，侵权必究！
- */
-
-package io.renren.datasource.aspect;
+ */package io.renren.datasource.aspect;
 
 
 import io.renren.datasource.annotation.DataSource;

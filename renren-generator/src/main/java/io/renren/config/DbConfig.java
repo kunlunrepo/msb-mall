@@ -4,9 +4,7 @@
  * https://www.renren.io
  * <p>
  * 版权所有，侵权必究！
- */
-
-package io.renren.config;
+ */package io.renren.config;
 
 import io.renren.dao.*;
 import io.renren.utils.RRException;

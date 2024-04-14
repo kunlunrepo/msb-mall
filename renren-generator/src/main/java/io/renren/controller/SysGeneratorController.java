@@ -4,9 +4,7 @@
  * https://www.renren.io
  *
  * 版权所有，侵权必究！
- */
-
-package io.renren.controller;
+ */package io.renren.controller;
 
 import io.renren.service.SysGeneratorService;
 import io.renren.utils.PageUtils;

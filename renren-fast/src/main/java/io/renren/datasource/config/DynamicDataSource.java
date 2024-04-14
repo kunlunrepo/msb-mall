@@ -4,9 +4,7 @@
  * https://www.renren.io
  *
  * 版权所有，侵权必究！
- */
-
-package io.renren.datasource.config;
+ */package io.renren.datasource.config;
 
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 
